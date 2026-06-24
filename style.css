@@ -1,38 +1,65 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #1e1e1e;
+    background: #0f0f0f;
     color: white;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
     text-align: center;
 }
 
 header {
-    background: #d97706;
-    padding: 40px;
+    padding: 30px 0;
 }
 
-main {
-    padding: 30px;
+.subtitle {
+    color: #aaa;
+    margin-top: -10px;
 }
 
-section {
-    background: #2d2d2d;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 10px;
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-button {
-    padding: 12px 24px;
-    font-size: 18px;
-    background: #d97706;
-    color: white;
+.tab {
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
+    background: #222;
+    color: white;
+    border-radius: 8px;
 }
 
-button:hover {
-    opacity: 0.9;
+.tab.active {
+    background: #d97706;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.ip {
+    font-size: 20px;
+    color: #d97706;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    color: #ddd;
 }
