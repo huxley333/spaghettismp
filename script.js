@@ -1,3 +1,11 @@
-document.getElementById("joinBtn").addEventListener("click", () => {
-    alert("Welcome to The Spaghetti SMP!");
-});
+function showTab(tabId) {
+    const tabs = document.querySelectorAll(".tab-content");
+    const buttons = document.querySelectorAll(".tab");
+
+    tabs.forEach(t => t.classList.remove("active"));
+    buttons.forEach(b => b.classList.remove("active"));
+
+    document.getElementById(tabId).classList.add("active");
+
+    event.target.classList.add("active");
+}
