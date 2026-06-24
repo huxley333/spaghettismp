@@ -8,25 +8,41 @@
 </head>
 <body>
 
+<div class="container">
+
     <header>
         <h1>The Spaghetti SMP</h1>
-        <p>Welcome to the official website!</p>
+        <p class="subtitle">Official Server Website</p>
     </header>
 
-    <main>
-        <section>
-            <h2>Server Info</h2>
-            <p>IP: Coming Soon</p>
-        </section>
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('general')">General</button>
+        <button class="tab" onclick="showTab('credits')">Credits</button>
+    </div>
 
-        <section>
-            <h2>About</h2>
-            <p>A Minecraft SMP where spaghetti is serious business.</p>
-        </section>
+    <!-- General Tab -->
+    <div id="general" class="tab-content active">
+        <div class="card">
+            <h2>Server IP</h2>
+            <p class="ip">play.spaghettismp.com</p>
+        </div>
+    </div>
 
-        <button id="joinBtn">Join the Adventure</button>
-    </main>
+    <!-- Credits Tab -->
+    <div id="credits" class="tab-content">
+        <div class="card">
+            <h2>Credits</h2>
+            <ul>
+                <li>seahawks_lover</li>
+                <li>Mr_Copey</li>
+                <li>Heeennnrrryyy</li>
+            </ul>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
